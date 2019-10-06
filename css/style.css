@@ -1,0 +1,34 @@
+a.brand-logo {
+  color: black;
+  font-weight: thin;
+  font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+nav .brand-logo i.material-icons {
+  margin-left: 15px;
+}
+
+.btn-small {
+  color: black;
+  font-weight: thin;
+  font-family: GillSans, Calibri, Trebuchet, sans-serif;
+  font-size: 12px;
+}
+
+nav a {
+  color: black;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.container{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
