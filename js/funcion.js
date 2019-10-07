@@ -16,6 +16,7 @@ $(function(){
             window.location = "datos.html"
         }else{
             $("#login_message").text("Datos Inválidos");
+            $("#login_btn").show();
         }
             
     });
