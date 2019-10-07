@@ -28,21 +28,52 @@
                             href="https://www.funcionpublica.gov.co/documents/418537/28811162/formato-unico-de-hoja-de-vida-persona-natural.pdf/"
                             target="_blank"><i class="material-icons left">picture_as_pdf</i>PDF</a></li>
 
-                    <li><a class="waves-effect blue lighten-5 btn-small modal-trigger" id="login" href="#login"><i
+                    <li><a class="waves-effect blue lighten-5 btn-small modal-trigger" id="login" href="#ingres"><i
                                 class="material-icons right">account_circle</i>LOG IN</a></li>
+
                 </ul>
             </div>
         </nav>
         <ul class="sidenav blue lighten-4" id="mobile-demo">
-            <li><a id="pdf"
-                    href="https://www.funcionpublica.gov.co/documents/418537/28811162/formato-unico-de-hoja-de-vida-persona-natural.pdf/">PDF</a>
-            </li>
-            <li><a id="login" href="#">Log In</a></li>
+            <li><a class="waves-effect blue lighten-5 btn-small modal-trigger" id="login" href="#ingres" style="color: black;"><i
+                        class="material-icons right" style="color:black">account_circle</i>LOG IN</a></li>
+            <li><a class="subheader">Descargas</a></li>
+            <li><a
+                    href="https://www.funcionpublica.gov.co/documents/418537/28811162/formato-unico-de-hoja-de-vida-persona-natural.pdf/"><i
+                        class="material-icons">picture_as_pdf</i>PDF Limpio</a></li>
+
         </ul>
+
     </header>
 
+    <div id="ingres" class="modal">
+        <div class="modal-content center">
+            <h4 class="flow-text">Ingresa al Sistema</h4>
+            <br>
 
+            <form action="#">
 
+                <div class="input-field ">
+                    <i class="material-icons prefix ">person</i>
+                    <input type="text" id="name">
+                    <label for="name">Usuario</label>
+                </div>
+                <br>
+
+                <div class="input-field ">
+                    <i class="material-icons prefix ">lock</i>
+                    <input type="password" id="pass">
+                    <label for="pass">Contraseña</label>
+                </div>
+                <br>
+                <a id="ing" class="waves-effect waves-light btn blue lighten-5"><i
+                        class="material-icons right">send</i>Ingresar</a>
+
+            </form>
+        </div>
+    </div>
+
+    </div>
 
     <div class="container">
         <div class="row card">
