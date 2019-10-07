@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hoja de Vida</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/offices/16/000000/parse-resume.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-wrapper blue lighten-4">
+                <a class="brand-logo flow-text truncate"><i class="material-icons">people</i>CV Funcionario Publico</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+
+                    <li><a class="waves-effect btn-small blue lighten-5 btn tooltipped" data-position="bottom"
+                            data-tooltip="Descargar PDF"
+                            href="https://www.funcionpublica.gov.co/documents/418537/28811162/formato-unico-de-hoja-de-vida-persona-natural.pdf/"
+                            target="_blank"><i class="material-icons left">picture_as_pdf</i>PDF</a></li>
+
+                    <li><a class="waves-effect blue lighten-5 btn-small modal-trigger" id="login" href="modal1"><i
+                                class="material-icons right">account_circle</i>LOG IN</a></li>
+                </ul>
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <h4>Modal Header</h4>
+                        <p>A bunch of text</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <ul class="sidenav blue lighten-4" id="mobile-demo">
+            <li><a id="pdf"
+                    href="https://www.funcionpublica.gov.co/documents/418537/28811162/formato-unico-de-hoja-de-vida-persona-natural.pdf/">PDF</a>
+            </li>
+            <li><a id="login" href="#">Log In</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <div class="row card">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                        <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+                        <label for="disabled">Disabled</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        This is an inline input field:
+                        <div class="input-field inline">
+                            <input id="email_inline" type="email" class="validate">
+                            <label for="email_inline">Email</label>
+                            <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="page-footer blue lighten-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="black-text">Hoja de Vida para Funcionario Público</h5>
+                    <p class="grey-text text-darken-4">Formato único de una hoja de vida para una persona natural
+                        hacia una función pública</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-copyright blue lighten-3">
+            <div class="container grey-text text-darken-4">
+                © 2019 Copyright Programación Web
+                <a class="grey-text text-darken-4 right" href="#!">Otros Proyectos</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/funcion.js"></script>
+</body>
+
+</html>
