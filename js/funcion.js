@@ -7,7 +7,7 @@ $(document).ready(function () {
 
 $(function(){
     $("#login_btn").click(function(){
-        $("#login_btn").hide();
+        
 
         var username = $("#name").val();
         var password = $("#pass").val();
