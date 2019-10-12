@@ -33,8 +33,21 @@ main {
     margin-bottom: 30px;
 }
 
-
+#titulo{
+display: block;
+margin: 0 auto;
+}
 
 #login_btn{
   color: black;
+}
+
+#escudo{
+  display: block;
+  margin: auto;
+  text-align: left;
+}
+
+#textotit{
+  font-weight: bold;
 }

@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "G:\\Mi unidad\\UNI\\2019-2\\WEB\\.vscode"
+		},
+		{
+			"path": "G:\\Mi unidad\\UNI\\2019-2\\WEB\\Eclipse"
+		},
+		{
+			"path": "G:\\Mi unidad\\UNI\\2019-2\\WEB\\Practice"
+		},
+		{
+			"path": "G:\\Mi unidad\\UNI\\2019-2\\WEB\\Proyectos"
+		},
+		{
+			"path": "G:\\Mi unidad\\UNI\\2019-2\\WEB\\Python"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Proyectos"
+	}
+}

@@ -18,6 +18,5 @@ $(function(){
             $("#login_message").text("Datos Inválidos");
             $("#login_btn").show();
         }
-            
     });
 });
