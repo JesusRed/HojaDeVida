@@ -8,148 +8,28 @@
     <title>Hoja de Vida</title>
     <link rel="shortcut icon" href="https://img.icons8.com/offices/16/000000/parse-resume.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <header>
-        <nav>
-            <div class="nav-wrapper blue lighten-4">
-                <a class="brand-logo flow-text truncate"><i class="material-icons">people</i>CV Funcionario Publico</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a class="waves-effect btn-small blue lighten-5 btn tooltipped" data-position="bottom"
-                            data-tooltip="Descargar PDF"
-                            href="https://www.funcionpublica.gov.co/documents/418537/28811162/formato-unico-de-hoja-de-vida-persona-natural.pdf/"
-                            target="_blank"><i class="material-icons left">picture_as_pdf</i>PDF</a></li>
-                    <li><a class="waves-effect blue lighten-5 btn-small modal-trigger" id="login" href="#ingres"><i
-                                class="material-icons right">account_circle</i>LOG IN</a></li>
-                </ul>
-            </div>
-        </nav>
-        <ul class="sidenav blue lighten-4" id="mobile-demo">
-            <li><a class="waves-effect blue lighten-5 btn-small modal-trigger" id="login" href="#ingres" style="color: black;"><i
-                        class="material-icons right" style="color:black">account_circle</i>LOG IN</a></li>
-            <li><a class="subheader">Descargas</a></li>
-            <li><a
-                    href="https://www.funcionpublica.gov.co/documents/418537/28811162/formato-unico-de-hoja-de-vida-persona-natural.pdf/"><i
-                        class="material-icons">picture_as_pdf</i>PDF Limpio</a></li>
-        </ul>
+
     </header>
 
-    <div id="ingres" class="modal">
-        <div class="modal-content center">
-            <h4 class="flow-text">Ingresa al Sistema</h4>
-            <br>
+    <main>
 
-            <form action="#">
+    </main>
 
-                <div class="input-field ">
-                    <i class="material-icons prefix ">person</i>
-                    <input type="text" id="name">
-                    <label for="name">Usuario</label>
-                </div>
-                <br>
-
-                <div class="input-field ">
-                    <i class="material-icons prefix ">lock</i>
-                    <input type="password" id="pass">
-                    <label for="pass">Contraseña</label>
-                </div>
-                <br>
-                <button type="button" id="login_btn" class="waves-effect waves-light btn blue lighten-5"><i
-                        class="material-icons right">send</i>Ingresar</button>
-                <span id="login_message"></span>
-            </form>
-        </div>
-    </div>
-
-    <div class="container">
-
-        <div class="card-panel hoverable col s12">
-            <div class="row">
-                <div>
-                    <div class="col s4">
-                        <img id="escudo" class="responsive-img " src="resources/escudo-de-colombia.png" height="100" width="100">
-                    </div>
-                    <div class="col s7">
-                        <h6 id="textotit" class="left-align flow-text">
-                            FORMATO ÚNICO <br> HOJA DE VIDA 
-                        </h6>
-                        <p class="left-align ">Persona Natural (Leyes 190 de 1995, 489 y 443 de 1998)</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row card">
-            <form class="col s12">
-                <div class="row">
-                    <div class="input-field col s6">
-                        <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-                        <label for="first_name">First Name</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <input id="last_name" type="text" class="validate">
-                        <label for="last_name">Last Name</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-                        <label for="disabled">Disabled</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="password" type="password" class="validate">
-                        <label for="password">Password</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="email" type="email" class="validate">
-                        <label for="email">Email</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12">
-                        This is an inline input field:
-                        <div class="input-field inline">
-                            <input id="email_inline" type="email" class="validate">
-                            <label for="email_inline">Email</label>
-                            <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <footer class="page-footer blue lighten-4">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="black-text">Hoja de Vida para Funcionario Público</h5>
-                    <p class="grey-text text-darken-4">Formato único de una hoja de vida para una persona natural
-                        hacia una función pública</p>
-                </div>
-
-            </div>
-        </div>
-        <div class="footer-copyright blue lighten-3">
-            <div class="container grey-text text-darken-4">
-                © 2019 Copyright Programación Web
-                <a class="grey-text text-darken-4 right" href="#!">Otros Proyectos</a>
-            </div>
-        </div>
+    <footer>
+        
     </footer>
 
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/funcion.js"></script>
 </body>
 
