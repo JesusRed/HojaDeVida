@@ -1,0 +1,22 @@
+#texto{
+  font-family: GillSans, Calibri, Trebuchet, sans-serif;
+  font-weight: 600;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+#banner{
+  background-image: url('../img/banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  max-width: 100%;
+  
+}
