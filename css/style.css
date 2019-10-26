@@ -20,3 +20,75 @@
   max-width: 100%;
   
 }
+/*ESTILOS DEL LOGIN*/
+h5
+{
+	font-weight: 400;
+}
+
+#formulario
+{
+  margin-top: 20px;
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 468px) {
+  /* Aquí van todos los estilos CSS */
+  #formulario{
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+.tabs #formulario
+{
+	height: 60px;
+}
+
+.form-container
+{
+	padding: 40px;
+	padding-top: 10px;
+}
+
+.confirmation-tabs-btn
+{
+	position: absolute;
+}
+
+/* label focus color */
+.input-field input:focus + label {
+  color: #455a64 !important;
+}
+/* label underline focus color */
+.row .input-field input:focus {
+  border-bottom: 1px solid #455a64 !important;
+  box-shadow: 0 1px 0 0 #455a64  !important
+}
+
+#titulologin{
+  color: #455a64;
+}
+
+.tabs .tab a {
+  color: #cfd8dc;
+  /*Custom Text Color*/
+}
+
+.tabs .tab a:hover {
+  color:#cfd8dc;
+  /*Custom Color On Hover*/
+}
+
+.tabs .tab a:focus.active {
+  color:#26a69a;
+  /*Custom Text Color While Active*/
+  background-color: #455a64 ;
+  /*Custom Background Color While Active*/
+}
+
+.tabs .indicator {
+  background-color:#cfd8dc;
+  /*Custom Color Of Indicator*/
+}
