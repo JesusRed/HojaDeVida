@@ -144,6 +144,7 @@
                             </select>
                             <label>Municipio</label>
                         </div>
+                        
                         <div class="row">
                             <h6 class="center-align">Dirección de correspondencia</h6>
                             <div class="input-field col l3 s12">
@@ -178,14 +179,13 @@
                                 <label>Municipio</label>
                             </div>
                         </div>
+                        <br>
+                        <center>
+                            <button class="btn waves-effect waves-light blue-grey darken-4" type="submit" name="action"
+                                formaction="form.html#formacionacademica"><i
+                                    class="material-icons right">arrow_forward</i>Continuar</button>
+                        </center>
                     </div>
-                    <br>
-                    <center>
-                        <button class="btn waves-effect waves-light blue-grey darken-4" type="submit" name="action"
-                            formaction="form.html#formacionacademica"><i
-                                class="material-icons right">arrow_forward</i>Continuar</button>
-                    </center>
-                </div>
             </form>
         </div>
 
@@ -206,24 +206,24 @@
                                     <option value="5">Quinto 5°</option>
                                 </optgroup>
                                 <optgroup label="Secundaria">
-                                    <option value="2">Sexto 6°</option>
-                                    <option value="2">Séptimo 7°</option>
-                                    <option value="2">Octavo 8°</option>
-                                    <option value="2">Noveno 9°</option>
-                                    <option value="2">Décimo 10°</option>
-                                    <option value="2" onclick="fechabas.disabled=false">Undécimo 11°</option>
+                                    <option value="6">Sexto 6°</option>
+                                    <option value="7">Séptimo 7°</option>
+                                    <option value="8">Octavo 8°</option>
+                                    <option value="9">Noveno 9°</option>
+                                    <option value="10">Décimo 10°</option>
+                                    <option value="11" onclick="fechabas.disabled = false">Undécimo 11°</option>
                                 </optgroup>
                             </select>
                         </div>
                         <div class="input-field col l4 s12">
-                            <input id="titbasica" type="text" disabled value="true" class="validate">
+                            <input id="titbasica" type="text" disabled value="" class="validate">
                             <label for="titbasica">Título obtenido</label>
                         </div>
                         <div class="input-field col l4 s12">
-                            <input name="fechabas" id="fechabasica" type="text" disabled value="true" class="datepicker">
+                            <input name="fechabas" id="fechabasica" type="text" disabled value="" class="datepicker">
                             <label for="fechabasica">Fecha de grado</label>
                         </div>
-                        
+
                     </div>
                 </div>
             </form>

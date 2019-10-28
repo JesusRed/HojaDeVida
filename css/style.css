@@ -30,11 +30,11 @@ h5
 #formlogin
 {
   margin-top: 20px;
-  width: 400px;
+  width: 700px;
   margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 468px) {
+@media only screen and (max-width: 768px) {
   /* Aquí van todos los estilos CSS */
   #formlogin{
     width: 100%;
