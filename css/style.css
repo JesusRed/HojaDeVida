@@ -20,13 +20,14 @@
   max-width: 100%;
   
 }
-/*ESTILOS DEL LOGIN*/
 h5
 {
-	font-weight: 400;
+  font-weight: 400;
 }
 
-#formulario
+/*ESTILOS DEL LOGIN*/
+
+#formlogin
 {
   margin-top: 20px;
   width: 400px;
@@ -35,13 +36,13 @@ h5
 
 @media only screen and (max-width: 468px) {
   /* Aquí van todos los estilos CSS */
-  #formulario{
+  #formlogin{
     width: 100%;
     padding: 20px;
   }
 }
 
-.tabs #formulario
+.tabs #formlogin
 {
 	height: 60px;
 }
@@ -91,4 +92,48 @@ h5
 .tabs .indicator {
   background-color:#cfd8dc;
   /*Custom Color Of Indicator*/
+}
+
+/*ESTILOS DEL FORMULARIO DE LA HOJA DE VIDA*/
+#formhojavida
+{
+  margin-top: 20px;
+  width: 950px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1080px) {
+  /* Aquí van todos los estilos CSS */
+  #formhojavida{
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+.tabs #formhojavida
+{
+	height: 70px;
+}
+
+[type="radio"]:checked + span:after, [type="radio"].with-gap:checked + span:after {
+  background-color: #455a64;
+}
+[type="radio"]:checked + span:after, [type="radio"].with-gap:checked + span:after {
+  background-color: #455a64;
+}
+
+[type="radio"]:checked + span:after, [type="radio"].with-gap:checked + span:before, [type="radio"].with-gap:checked + span:after {
+  border: 2px solid #455a64;
+}
+.datepicker-date-display {
+  background-color: #455a64;
+}
+
+.datepicker-table td.is-today {
+  color: #698a99;
+}
+
+.datepicker-cancel, .datepicker-clear, .datepicker-today, .datepicker-done {
+  color: #455a64;
+  padding: 0 1rem;
 }

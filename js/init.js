@@ -3,4 +3,6 @@ $(document).ready(function(){
   $('.tabs').tabs();
   $('.tooltipped').tooltip();
   $('.modal').modal();
+  $('.datepicker').datepicker();
+  $('select').formSelect();
 });

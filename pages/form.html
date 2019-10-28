@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../css/materialize.css">
     <link rel="stylesheet" href="../css/style.css">
-
 </head>
 
 <body>
@@ -21,7 +20,8 @@
         <div class="navbar-fixed blue-grey darken-1">
             <nav>
                 <div class="nav-wrapper blue-grey darken-1">
-                    <a href="../index.html" class="brand-logo truncate flow-text"><i class="material-icons left">person_pin</i>CV
+                    <a href="../index.html" class="brand-logo truncate flow-text"><i
+                            class="material-icons left">person_pin</i>CV
                         Checkpoint</a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
@@ -34,7 +34,7 @@
 
         <!--SIDENAV-->
         <ul class="sidenav blue-grey darken-1" id="mobile-demo">
-            
+
             <li>
                 <div class="divider"></div>
             </li>
@@ -44,32 +44,108 @@
     </header>
 
     <!--FORMULARIO-->
-    <div id="formlogin" class="container white z-depth-2">
+    <div id="formhojavida" class="container white z-depth-2">
         <ul class="col s12 tabs blue-grey darken-4">
-            <li class="tab col s3"><a class="white-text active" href="#login">ingresar</a></li>
-            <li class="tab col s3"><a class="white-text tooltipped" data-position="top"
-                    data-tooltip="No tienes una cuenta? Registrate" href="#register">registrar</a></li>
+            <li class="tab col s3"><a class="white-text active" href="#login">Datos personales</a></li>
+
         </ul>
-        <div id="login" class="col s12">
+        <div id="datospersonales" class="col s12">
             <form class="col s12">
                 <div class="form-container">
-                    <h3 id="titulologin">Ingresar</h3>
+                    <h3 id="titulologin">Datos Personales</h3>
                     <div class="row">
-                        <div class="input-field col s12">
-                            <input id="email" type="email" class="validate">
-                            <label for="email">Correo E-mail</label>
+                        <div class="input-field col s4">
+                            <input id="primapellido" type="text" class="validate">
+                            <label for="primapellido">Primer apellido</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input id="segapellido" type="text" class="validate">
+                            <label for="segapellido">Segundo apellido</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input id="nombre" type="text" class="validate">
+                            <label for="nombre">Nombre completo</label>
+                        </div>
+                    </div>
+                    <h6 class="center-align">Documento de identificación y nacionalidad</h6>
+                    <div class="row">
+                        <div class="input-field col s3">
+                            <p class="center-align">
+                                <label>
+                                    <input name="group1" type="radio" checked />
+                                    <span>C.C.</span>
+                                </label>
+                                <label>
+                                    <input name="group1" type="radio" checked />
+                                    <span>C.E.</span>
+                                </label>
+                                <label>
+                                    <input name="group1" type="radio" checked />
+                                    <span>PAS</span>
+                                </label>
+                            </p>
+                        </div>
+                        <div class="input-field col s3">
+                            <input id="numcedula" type="text" class="validate">
+                            <label for="numcedula">Número de cédula</label>
+                        </div>
+
+                        <div class="input-field col s3">
+                            <p class="center-align">
+                                <label>
+                                    <input name="group1" onclick="pais.disabled = true" type="radio" checked />
+                                    <span>COL</span>
+                                </label>
+
+                                <label>
+                                    <input name="group1" onclick="pais.disabled = false" type="radio" checked />
+                                    <span>Extranjera</span>
+                                </label>
+                            </p>
+                        </div>
+                        <div class="input-field col s3">
+                            <input name="pais" disabled value="" id="disabled" type="text" class="validate">
+                            <label for="disabled">País</label>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field col s12">
-                            <input id="password" type="password" class="validate">
-                            <label for="password">Contraseña</label>
+                        <h6 class="center-align">Fecha y lugar de nacimiento</h6>
+                        <div class="input input-field col s3">
+                            <input type="text" id="fechanac" class="datepicker">
+                            <label for="fechanac">Fecha de Nacimiento</label>
+                        </div>
+                        <div class="input-field col s3">
+                            <select>
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                            <label>Pais</label>
+                        </div>
+                        <div class="input-field col s3">
+                            <select>
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                            <label>Depto</label>
+                        </div>
+                        <div class="input-field col s3">
+                            <select>
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                            <label>Municipio</label>
                         </div>
                     </div>
                     <br>
                     <center>
-                        <button class="btn waves-effect waves-light blue-grey darken-4" type="submit"
-                            name="action" formaction="form.html">INGRESAR</button>
+                        <button class="btn waves-effect waves-light blue-grey darken-4" type="submit" name="action"
+                            formaction=""><i class="material-icons right">arrow_forward</i>Continuar</button>
                     </center>
                 </div>
             </form>
@@ -117,26 +193,6 @@
             </form>
         </div>
     </div>
-
-    <!--ACUERDO DE REGISTRO-->
-    <div id="terminos" class="modal">
-        <div class="modal-content">
-            <h4>Términos y condiciones</h4>
-            <p class="flow-text">
-                    Este portal se creó con el propósito de ofrecer un servicio para los usuarios que deseen registrar la hoja de vida, con el fin de almacenar sus datos para un manejo óptimo y claro de estos sin ningun costo .
-                    <br>
-                    <br>
-                    CVCheckpoint no censura las hojas de vida que ingresen al sitio, y tampoco, se ofrece al usuario una oportuinidad laboral basado en los datos registrados en la hoja de vida.
-                    <br>
-                    <br>
-                    La información que el usuario registra: datos personales, dirección de residencia, formación académica, experiencia laboral, composición familiar y otros, es de uso exclusivo de CVCheckpoint, no será revelada a terceras personas y el tratamiento de los mismos se dará de acuerdo a la Política de Tratamiento de Datos Personales de CVCheckpoint.
-            </p>
-        </div>
-        <div class="modal-footer">
-            <a href="login.html" class="modal-close btn waves-effect waves-light blue-grey lighten-1 modal-trigger">Estoy de acuerdo</a>
-        </div>
-    </div>
-
 
 
     <!--PIE DE PAGINA-->
