@@ -48,7 +48,8 @@
 
         <ul class="col s12 tabs blue-grey darken-4">
             <li class="tab col l3 s12"><a class="white-text active" href="#datospersonales">Datos personales</a></li>
-            <li class="tab col l3 s12  disabled"><a class="white-text active" href="#formacionacademica">Formación Académica</a></li>
+            <li class="tab col l3 s12  disabled"><a class="white-text active" href="#formacionacademica">Formación
+                    Académica</a></li>
 
         </ul>
         <div id="datospersonales" class="col s12">
@@ -181,14 +182,51 @@
                     <br>
                     <center>
                         <button class="btn waves-effect waves-light blue-grey darken-4" type="submit" name="action"
-                            formaction="form.html#formacionacademica"><i class="material-icons right">arrow_forward</i>Continuar</button>
+                            formaction="form.html#formacionacademica"><i
+                                class="material-icons right">arrow_forward</i>Continuar</button>
                     </center>
                 </div>
             </form>
         </div>
 
         <div id="formacionacademica" class="cols12">
-        
+            <form class="col s12">
+                <div class="form-container">
+                    <h3>Formación académica</h3>
+                    <div class="row">
+                        <h6 class="center-align">Educación básica</h6>
+                        <div class="input-field col l4 s12">
+                            <select>
+                                <option value="" disabled selected>Escoja su ultimo grado aprobado</option>
+                                <optgroup label="Primaria">
+                                    <option value="1">Primero 1°</option>
+                                    <option value="2">Segundo 2°</option>
+                                    <option value="3">Tercero 3°</option>
+                                    <option value="4">Cuarto 4°</option>
+                                    <option value="5">Quinto 5°</option>
+                                </optgroup>
+                                <optgroup label="Secundaria">
+                                    <option value="2">Sexto 6°</option>
+                                    <option value="2">Séptimo 7°</option>
+                                    <option value="2">Octavo 8°</option>
+                                    <option value="2">Noveno 9°</option>
+                                    <option value="2">Décimo 10°</option>
+                                    <option value="2" onclick="fechabas.disabled=false">Undécimo 11°</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="input-field col l4 s12">
+                            <input id="titbasica" type="text" disabled value="true" class="validate">
+                            <label for="titbasica">Título obtenido</label>
+                        </div>
+                        <div class="input-field col l4 s12">
+                            <input name="fechabas" id="fechabasica" type="text" disabled value="true" class="datepicker">
+                            <label for="fechabasica">Fecha de grado</label>
+                        </div>
+                        
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 
