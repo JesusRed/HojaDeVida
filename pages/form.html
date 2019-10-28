@@ -45,7 +45,7 @@
 
     <!--FORMULARIO-->
     <div id="formhojavida" class="container white z-depth-2">
-
+        <!--PESTAÑAS-->
         <ul class="col s12 tabs blue-grey darken-4">
             <li class="tab col l3 s12 disabled"><a class="white-text active" href="#datospersonales">Datos
                     personales</a></li>
@@ -54,6 +54,8 @@
             <li class="tab col l3 s12 disabled"><a class="white-text active" href="#explaboral">Experiencia Laboral</a>
             </li>
         </ul>
+
+        <!--SECCION DE DATOS PERSONALES-->
         <div id="datospersonales" class="col s12">
             <form class="col s12">
                 <div class="form-container">
@@ -191,11 +193,11 @@
                 </div>
             </form>
         </div>
-
+        <!--SECCION DE FORMACIÓN ACADMEICA-->
         <div id="formacionacademica" class="col s12">
             <form class="col s12">
                 <div class="form-container">
-                    <h3>Formación académica</h3>
+                    <h3 id="titulologin">Formación académica</h3>
                     <div class="row">
                         <h6 class="center-align">Educación básica y media</h6>
                         <div class="input-field col l4 s12">
@@ -311,8 +313,8 @@
                     <br>
                     <center>
                         <button class="btn waves-effect waves-light blue-grey darken-4" type="submit" name="action"
-                            formaction="form.html#datospersonales"><i
-                                class="material-icons left">arrow_back</i>Volver atrás</button>
+                            formaction="form.html#datospersonales"><i class="material-icons left">arrow_back</i>Volver
+                            atrás</button>
                         <button class="btn waves-effect waves-light blue-grey darken-4" type="submit" name="action"
                             formaction="form.html#explaboral"><i class="material-icons right">arrow_forward</i>Guardar y
                             Continuar</button>
@@ -320,14 +322,26 @@
                 </div>
             </form>
         </div>
-
+        <!--SECCION DE EXPERIENCIA LABORAL-->
         <div id="explaboral" class="col s12">
-            
+            <form class="col s12">
+                <div class="form-container">
+                    <h3 id="titulologin">Experiencia Laboral</h3>
+                    <div class="row">
+                        <h6 class="center-align">Empresa actual o contrato vigente</h6>
+                        <div class="input-field col l4 s12">
+                            <input id="empresa" type="text" class="validate">
+                            <label for="empresa">Nombre de la empresa</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
 
 
     </div>
 
+    <!--PIE DE PAGINA-->
     <footer id="footer" class="page-footer blue-grey darken-1">
         <div class="container">
             <div class="row">
@@ -360,20 +374,12 @@
         </div>
     </footer>
 
-
-
-    <!--PIE DE PAGINA-->
-
-
-
     <!--  Scripts-->
 
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="../js/materialize.js"></script>
     <script src="../js/init.js"></script>
-
-
 </body>
 
 </html>
