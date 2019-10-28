@@ -48,9 +48,8 @@
 
         <ul class="col s12 tabs blue-grey darken-4">
             <li class="tab col l3 s12"><a class="white-text active" href="#datospersonales">Datos personales</a></li>
-            <li class="tab col l3 s12  disabled"><a class="white-text active" href="#formacionacademica">Formación
+            <li class="tab col l3 s12"><a class="white-text active" href="#formacionacademica">Formación
                     Académica</a></li>
-
         </ul>
         <div id="datospersonales" class="col s12">
             <form class="col s12">
@@ -101,14 +100,14 @@
                                 </label>
 
                                 <label>
-                                    <input name="group1" onclick="pais.disabled = false" type="radio" checked />
+                                    <input name="group1" onclick="pais.disabled = false" type="radio" />
                                     <span>Extranjera</span>
                                 </label>
                             </p>
                         </div>
                         <div class="input-field col l3 s12">
-                            <input name="pais" disabled value="" id="disabled" type="text" class="validate">
-                            <label for="disabled">País</label>
+                            <input name="pais" disabled="diabled" type="text" class="disabled validate">
+                            <label for="pais">País</label>
                         </div>
                     </div>
                     <div class="row">
@@ -144,7 +143,7 @@
                             </select>
                             <label>Municipio</label>
                         </div>
-                        
+
                         <div class="row">
                             <h6 class="center-align">Dirección de correspondencia</h6>
                             <div class="input-field col l3 s12">
@@ -183,9 +182,10 @@
                         <center>
                             <button class="btn waves-effect waves-light blue-grey darken-4" type="submit" name="action"
                                 formaction="form.html#formacionacademica"><i
-                                    class="material-icons right">arrow_forward</i>Continuar</button>
+                                    class="material-icons right">arrow_forward</i>Guardar y Continuar</button>
                         </center>
                     </div>
+                </div>
             </form>
         </div>
 
@@ -194,7 +194,7 @@
                 <div class="form-container">
                     <h3>Formación académica</h3>
                     <div class="row">
-                        <h6 class="center-align">Educación básica</h6>
+                        <h6 class="center-align">Educación básica y media</h6>
                         <div class="input-field col l4 s12">
                             <select>
                                 <option value="" disabled selected>Escoja su ultimo grado aprobado</option>
@@ -211,27 +211,113 @@
                                     <option value="8">Octavo 8°</option>
                                     <option value="9">Noveno 9°</option>
                                     <option value="10">Décimo 10°</option>
-                                    <option value="11" onclick="fechabas.disabled = false">Undécimo 11°</option>
+                                    <option value="11">Undécimo 11°</option>
                                 </optgroup>
                             </select>
                         </div>
                         <div class="input-field col l4 s12">
-                            <input id="titbasica" type="text" disabled value="" class="validate">
-                            <label for="titbasica">Título obtenido</label>
+                            <input name="gradobasica" type="text" class="validate">
+                            <label for="gradobasica">Título obtenido</label>
                         </div>
                         <div class="input-field col l4 s12">
-                            <input name="fechabas" id="fechabasica" type="text" disabled value="" class="datepicker">
-                            <label for="fechabasica">Fecha de grado</label>
+                            <input name="gradobasica" type="text" class="datepicker">
+                            <label for="gradobasica">Fecha de grado</label>
                         </div>
-
                     </div>
+                    <div class="row">
+                        <h6 class="center-align">Educación superior</h6>
+                        <div class="input-field col l3 s12">
+                            <select>
+                                <option value="" disabled selected>Modalidad</option>
+                                <option value="1">Técnica</option>
+                                <option value="2">Tecnología</option>
+                                <option value="3">Tecnología Especializada</option>
+                                <option value="4">Universitaria</option>
+                                <option value="5">Especialización</option>
+                                <option value="6">Maestría o Magister</option>
+                                <option value="7">Doctorado o PhD</option>
+                            </select>
+                            <label>Seleccione su modalidad académica</label>
+                        </div>
+                        <div class="input-field col l3 s12">
+                            <p>Graduado
+                                <label>
+                                    <input onclick="titleobt.disabled=false" name="group1" type="radio" />
+                                    <span>SI</span>
+                                </label>
+                                <label>
+                                    <input onclick="titleobt.disabled=true" name="group1" type="radio" checked />
+                                    <span>NO</span>
+                                </label>
+                            </p>
+                        </div>
+                        <div class="input-field col l3 s12">
+                            <input disabled="disabled" class="disabled" type="text" name="titleobt" id="titulobt">
+                            <label for="titleobt">Nombre del titulo obtenido</label>
+                        </div>
+                        <div class="input-field col l3 s12">
+                            <input name="fechatermina" type="text" class="datepicker">
+                            <label for="fechatermina">Fecha de terminación</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h6 class="center-align">Idiomas que habla, lee o escribe</h6>
+                        <div class="input-field col l6 s12">
+                            <textarea id="idioma" class="materialize-textarea"></textarea>
+                            <label for="idioma">Textarea</label>
+                        </div>
+                        <div class="input-field col l6 s12">
+                            <p>
+                                <label>
+                                    <input id="indeterminate-checkbox" type="checkbox" />
+                                    <span>Habla</span>
+                                </label>
+                                <label>
+                                    <input id="indeterminate-checkbox" type="checkbox" />
+                                    <span>Lee</span>
+                                </label>
+                                <label>
+                                    <input id="indeterminate-checkbox" type="checkbox" />
+                                    <span>Escribe</span>
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col l6 s12">
+                            <textarea id="idioma" class="materialize-textarea"></textarea>
+                            <label for="idioma">Textarea</label>
+                        </div>
+                        <div class="input-field col l6 s12">
+                            <p>
+                                <label>
+                                    <input id="indeterminate-checkbox" type="checkbox" />
+                                    <span>Habla</span>
+                                </label>
+                                <label>
+                                    <input id="indeterminate-checkbox" type="checkbox" />
+                                    <span>Lee</span>
+                                </label>
+                                <label>
+                                    <input id="indeterminate-checkbox" type="checkbox" />
+                                    <span>Escribe</span>
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <center>
+                        <button class="btn waves-effect waves-light blue-grey darken-4" type="submit" name="action"
+                            formaction="form.html#formacionacademica"><i
+                                class="material-icons right">arrow_forward</i>Guardar y Continuar</button>
+                    </center>
                 </div>
             </form>
         </div>
+
+
     </div>
 
-
-    <!--PIE DE PAGINA-->
     <footer id="footer" class="page-footer blue-grey darken-1">
         <div class="container">
             <div class="row">
@@ -263,6 +349,11 @@
             </div>
         </div>
     </footer>
+
+
+
+    <!--PIE DE PAGINA-->
+
 
 
     <!--  Scripts-->
