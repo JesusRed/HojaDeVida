@@ -151,15 +151,14 @@ h5 {
 }
 
 #boton1 {
-  text-align: right;
+  text-align: center;
   display: block;
   margin-top: 4%;
   padding-left: 4%;
 }
 
 #boton2 {
-  text-align: left;
+  text-align: center;
   display: block;
   margin-top: 4%;
-  padding-right: 4%;
 }
