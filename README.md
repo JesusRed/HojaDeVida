@@ -4,7 +4,7 @@ _Surge de la idea de crear una plataforma para que cualquier usuario (mayor de e
 
 __Prerrequsitos__
 
-Al funcionar como una plataforma web, lo verdaderamente esencial seria un conxión estable para esta.
+Al funcionar como una plataforma web, lo verdaderamente esencial seria un conexión estable para esta.
 
 __Tecnologías__
 
